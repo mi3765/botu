@@ -10,6 +10,12 @@ int main() {
         box.insert(a[i]);
     }
 
-    
+    for(int i = 0; i < k; i++) {
+        if(box.find(i) == box.end()) {
+            cout << i << endl;
+            return 0;
+        }
+    }
+    cout << k << endl;
     return 0;
 }
