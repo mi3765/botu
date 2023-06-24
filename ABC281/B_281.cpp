@@ -49,7 +49,19 @@ int main() {
             return 0;
         }
     }
-    
+
     cout << "Yes" << endl;
     return 0;
 }
+
+// B 別解
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     string s;
+//     cin >> s;
+//     regex pattern("^[A-Z][1-9][0-9]{5}[A-Z]$");
+//     string result = regex_match(s, pattern) ? "Yes" : "No";
+//     cout << result << endl;
+//     return 0;
+// }
