@@ -5,19 +5,19 @@ int main() {
     cin >> n;
     vector<int> a(n);
     for(int i = 0; i < n; i++) cin >> a[i];
-    string s;
-    for(int i = 0; i < q; i++) cin >> s;
-    int c = 0;
+    cin >> q;
     for(int i = 0; i < q; i++) {
-        c = s[i].size();
-        for(int i = 0; i < c; i++) {
-            if(c == 2) {
-                cout << a[s[1]] << endl;
-            } else if(c == 3) {
-                a[s[1]] = s[2];
-            }
+        int first;
+        cin >> first;
+        if(first == 1) {
+            int k, l;
+            cin >> k >> l;
+            a[k - 1] = l;
+        } else {
+            int k;
+            cin >> k;
+            cout << a[k - 1] << endl;
         }
-        
     }
     return 0;
 }
